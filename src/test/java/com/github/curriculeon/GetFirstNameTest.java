@@ -11,10 +11,12 @@ public class GetFirstNameTest {
     private void test(String expectedFirstName) {
         Person person = new Person();
         person.setFirstName(expectedFirstName);
+        System.out.println("Expected First Name "+expectedFirstName);
 
         // when
         String actualFirstName = person.getFirstName();
-
+        System.out.println("actual1 "+person.getFirstName());
+        System.out.println("actual2 "+actualFirstName);
         // then
         Assert.assertEquals(expectedFirstName, actualFirstName);
     }
